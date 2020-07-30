@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Digital Pomodro Clock</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body style="color:white; background: #1E555C; font-family: 'Orbitron', sans-serif;">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  	<div  class="container-fluid text-center">
+  	<div style="padding-left:400px;" class="row-12">
+  		<div class="col-8">
+    		<h1 class="bg-success">Pomodro Clock</h1>
+    	</div>
+    </div>
+    <div style="padding-bottom:20px;" class="row">
+    	<div class="col ">
+    		<h3 class="btn btn-block disabled btn-outline-info" id="break-label">Break Length</h3>
+    		
+	    		<h4 onclick="changeBreak(-1)" class="btn btn-outline-danger d-inline" id="break-decrement">↶</h4>
+	    		<h4 class="d-inline" id="break-length">5</h4>
+	    		<h4 onclick="changeBreak(+1)" class="btn btn-outline-success d-inline" id="break-increment">⤴</h4>
+	    
+    	</div>
+    	<div class="col ">
+    		<h3 style="color:hotpink;" class="btn btn-block disabled btn-outline-secondary" id="session-label">Session Length</h3>
+	    		<h4 onclick="changeSession(-1)" class="btn btn-outline-danger d-inline" id="session-decrement">↶</h4>
+	    		<h4  class="d-inline" id="session-length">25</h4>
+	    		<h4 onclick="changeSession(+1)" class="btn btn-outline-success d-inline" id="session-increment">⤴</h4>
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="btn btn-block disabled btn-outline-info">
+    	<h3 style="padding: 0 200px ;" class="btn disabled btn-outline-warning" id="timer-label">Session</h3>
+    	<h4 style="color:white;" id="time-left">25:00</h4>
+    	<div>
+    	<h4 onclick="toggleStart()" class="btn btn-outline-success" id="start_stop">➤/⭮</h4>
+    	<h4 onclick="reSet()" class="btn btn-outline-danger" id="reset">⟳</h4>
+    	</div>
+    	</div>
+    </div>
+    <audio src="sound/beep.mp3" type="audio/mp3" id="beep"></audio>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  <script src="JS.js" defer></script>	
+</html>
